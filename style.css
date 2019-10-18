@@ -1,0 +1,286 @@
+/* hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
+body
+{
+    overflow-x: hidden;
+}
+
+/**
+  * important: keep position fixed, you can however use top:0 instead of bottom:0
+  * if you want to make it stick to the top of the browser
+  */
+.scroll
+{
+    position: fixed;
+    bottom: -100px;
+    left: 0;
+}
+
+html,
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+    background-color:#232b44;
+}
+
+h3
+{
+    margin: 10px 0;
+}
+
+a
+{
+    color: #238acb;
+}
+
+a img
+{
+    border: none;
+}
+
+
+pre
+{
+    font-size: 14px;
+    color: white;
+    padding: 10px;
+    background: #646464;
+}
+
+/*.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    overflow: hidden;
+    background: #238acb;
+    z-index: 1000;
+}
+
+.header .logo
+{
+    float: left;
+    padding: 22px;
+    padding-left: 30px;
+}
+
+.header .credits
+{
+    float: right;
+    padding-top: 15px;
+}
+*/
+.horizon
+{
+    line-height: 20px;
+    z-index: 100;
+    bottom:-80vh;
+    left:0vw;
+}
+
+.middle
+{
+    z-index: 250;
+    line-height: -500px;
+    width: 1500px;
+    top:15vh;
+    left:0vw;
+}
+
+.front
+{
+    z-index: 300;
+    top: 150px;
+    width: 2000px;
+   
+
+}
+
+.intro
+{
+    position: absolute;
+    left: 24%;
+    top: -10%;
+    padding-right: 50px;
+    font-size: 50px;
+    color:rgb(226, 24, 182);
+font-family:"Vintage Warehouse";
+font-weight: normal;
+}
+@font-face {font-family:"Vintage Warehouse";src:url("Vintage_Warehouse.eot?") format("eot"),url("Vintage_Warehouse.woff") format("woff"),url("Vintage_Warehouse.ttf") format("truetype"),url("Vintage_Warehouse.svg#VintageWarehouse") format("svg");font-weight:normal;font-style:normal;}
+.intro span{
+   zoom:1.1;
+}
+.page
+{
+    color:black;
+    top: -20px;
+    width: 500px;
+    background:rgba(255,255,255,0.4);
+    padding: 10px 30px;
+    /* border: 1px rgba(238,238,238,0.4) solid; */
+    position: absolute;
+
+}
+.page h1
+{
+    color: #232b44;
+    font-family:"Adelle Regular";
+}
+.page p{
+    font-family:"Adelle Regular";
+}
+
+@font-face {
+    font-family:"Adelle Regular";
+  src:url("adelleregularwebfont-bg.png") format("png"),url("adelleregularwebfont-thumb.png") format("png"),url("adelleregularwebfont.eot") format("eot"),url("adelleregularwebfont.png") format("png")
+  ,url("adelleregularwebfont.ttf")format("ttf"),url("adelleregularwebfont.woff") format("woff") ;
+  font-weight:normal;
+  font-style:normal;}
+  
+.description
+{
+    left: 1300px;
+}
+
+
+/*@media screen and (max-width: 1500px) {
+    .middle{
+        line-height: 0px;
+         top:5vh; 
+         }
+         .intro{
+             left:25%;
+             top:15%;
+         }
+         .middle img{
+          widows: 70vw;
+          height:160vh;
+         }
+        .horizon
+        {
+         line-height: 20px;
+        bottom:-40vh;
+        left:0vw;
+        }
+        .page{
+            font-size:30px;
+            top:-15%;
+            padding:8px 15px;
+        }
+        .description{
+            left:120vw;
+        }
+        .front{
+            width:190vw;
+            }
+}*/
+
+@media screen and (max-width: 1100px) {
+    .middle{
+    line-height: 0px;
+     top:22vh; 
+     }
+     .intro{
+         left:15%;
+         top:15%;
+     }
+     .front{
+         width:200vw;
+     }
+     .middle img{
+      width:120vw;
+      height:120vh;
+     }
+    .horizon
+    {
+     line-height: 20px;
+    bottom:-40vh;
+    left:0vw;
+    }
+    .page{
+        font-size:30px;
+        top:0%;
+    }
+    }
+@media screen and (max-width: 700px) {
+    .middle img{
+        width:130vw;
+        height:130vh;
+    }
+    .middle{
+        line-height: 0px; 
+        width:1500px;
+        top: 25vh;
+    }
+    .front{
+    width:280vw;
+    }
+    .horizon
+    {
+        line-height: 20px;
+        bottom:-60vh;
+        left:0vw;
+    }
+    .horizon img{
+        width:420vw;
+        height:350vh;
+    }
+    .description
+    {
+        left: 180vw;
+    }
+    .intro{
+        left:10%;
+        font-size:50px;
+        top:10%
+    }
+    .page{
+        width:90vw;
+        padding: 10px 20px;
+        font-size:21px;
+        box-sizing: border-box;
+        top:-10%;
+        /*word-wrap: scroll;*/
+    }
+    }
+    
+    
+    
+    
+    @media screen and (max-width: 400px) {
+    .intro{
+    left:8%;
+    font-size:30px;
+    top:0%;
+    }
+    .description
+    {
+        left: 140vw;
+    }
+    .page{
+        width:90vw;
+        padding: 5px 15px;
+        font-size:18px;
+        top:-19%;
+        height: 86vh;
+    }
+    .middle img{
+        width:120vw;
+        height:120vh;
+    }
+    .middle{
+        line-height: 0px;
+        top:21vh; 
+    }
+    .horizon img{
+        width:420vw;
+        height:340vh;
+    }
+    }
